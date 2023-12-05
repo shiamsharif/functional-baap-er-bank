@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Baap Er Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-6">Functional 
+            <span class="text-red-500 font-semibold">Baap-er-Bank</span>
+        </h1>
+    </header>
+    <main>
+        <!-- Deposti, Withdraw and Balance section -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+                <div class="bg-yellow-400 p-8 rounded-lg">
+                    <h4 class="text-3xl">Deposit</h4>
+                    <h2 class="text-5xl">$ <span id="deposit-total">00</span> </h2>
+                </div>
+                <div class="bg-red-400 p-8 rounded-lg">
+                    <h4 class="text-3xl">Withdraw</h4>
+                    <h2 class="text-5xl">$ <span id="withdraw-total">00</span> </h2>
+                </div>
+                <div class="bg-green-400 p-8 rounded-lg">
+                    <h4 class="text-3xl">Balance</h4>
+                    <h2 class="text-5xl">$ <span id="balance-total">00</span> </h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- deposit and withdrow -->
+        <section>
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto mt-5">
+                <div class="bg-violet-400 p-8 rounded-lg">
+                    <h4 class="text-4xl">Deposit Here</h4>
+                    <input id="deposit-field" type="text" class="rounded-md mt-1" placeholder=" $ deposit Amount">
+                    <button id="btn-deposit" class="bg-green-500 py-1 px-5 rounded-lg mt-3 hover:bg-red-400 eaes-in duration-200">Deposit</button>
+                </div>
+                <div class="bg-violet-400 p-8 rounded-lg">
+                    <h4 class="text-4xl">Withdraw Here</h4>
+                    <input id="withdraw-field"  type="text" class="rounded-md mt-1" placeholder=" $ Withdraw Amount">
+                    <button id="btn-withdraw" class="bg-green-500 py-1 px-5 rounded-lg mt-3 hover:bg-red-400 eaes-in duration-300 ">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- js tag -->
+    <script src="js/utilities.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
